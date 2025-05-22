@@ -1,1 +1,3 @@
 # AD-Onepage
+'''Scanning all accessible targets externally
+nmap -A -p- -Pn <ip> -oN nmap-name.txt'''
