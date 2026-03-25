@@ -1,4 +1,4 @@
-# AD-Onepage
+# Dumps&Creds
 
 # External
 ## Scanning all accessible targets externally
@@ -8,18 +8,18 @@ nmap -A -p- -Pn <ip> -oN nmap-name.txt
 
 Check what systems user can login to (pwn3d = local admin)
 ```
-crackmapexec smb 192.168.50.75 -u pete -p 'Nexus123!' -d corp.com --continue-on-success
+crackmapexec smb 192.168.50.75 -u <user> -p '<pass>' -d corp.com --continue-on-success
 ```
 
 ## SMB
 ```
-crackmapexec smb 192.168.50.75 -u pete -p 'Nexus123!' -d corp.com  ---shares
-crackmapexec smb 192.168.50.75 -u pete -p 'Nexus123!' --shares
+crackmapexec smb 192.168.50.75 -u <user> -p '<pass>' -d corp.com  ---shares
+crackmapexec smb 192.168.50.75 -u <user> -p <pass> --shares
 Nxc smb <ip> -u '' ip ''
 ```
 
 ## LDAP
-//try null (no user/password) [//wiki](https://www.netexec.wiki/ldap-protocol/query-ldap)
+//try null (no user/password)
 ```
 Nxc ldap <ip> -u '' ip '' 
 Nxc ldap <ip> -u '' ip '' -M get-desc-users
